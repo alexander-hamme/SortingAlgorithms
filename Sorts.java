@@ -106,7 +106,7 @@ public class Sorts {
 
     private static int partition(int[] arr, int lo, int hi) {
 
-        // experiment with different pivot choosing methods
+        // TODO: experiment with different pivot choosing methods
         int i = lo;
         int j = hi;
         int tmp;
