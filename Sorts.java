@@ -5,7 +5,7 @@ public class Sorts {
 
     private static class Sorter {
 
-        private static final int NUMB_ITERATIONS = 3;       // Number of times to time each sort
+        private static final int NUMB_ITERATIONS = 3;          // Number of times to time each sort
 
         private Sorter() {
 
@@ -23,11 +23,12 @@ public class Sorts {
     }
 
     private static void InsertionSort(int[] arr) {
+        /* wrapper for actual insertion sort function*/
         insertionsort(arr, 1, arr.length);
     }
 
     private static void insertionsort(int[] arr, int lo, int hi) {
-        
+        /* insertionSort algorithm, used for quicksort optimization below*/
         for (int i = lo; i < hi; i++) {
             // ASSERT a[0..j-1] is sorted
 
